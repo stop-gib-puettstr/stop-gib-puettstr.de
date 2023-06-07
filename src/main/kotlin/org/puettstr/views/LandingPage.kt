@@ -1,16 +1,10 @@
 package org.puettstr.views
 
-import com.vaadin.flow.component.Key
-import com.vaadin.flow.component.button.Button
-import com.vaadin.flow.component.html.Div
 import com.vaadin.flow.component.html.Image
 import com.vaadin.flow.component.html.Paragraph
-import com.vaadin.flow.component.notification.Notification
 import com.vaadin.flow.component.orderedlayout.FlexComponent
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout
 import com.vaadin.flow.component.orderedlayout.VerticalLayout
-import com.vaadin.flow.component.textfield.TextField
-import com.vaadin.flow.dom.ElementFactory
 import com.vaadin.flow.router.PageTitle
 import com.vaadin.flow.router.Route
 import com.vaadin.flow.router.RouteAlias
@@ -48,8 +42,10 @@ class LandingPage : PageLayout() {
             Paragraph("Wenn die Stadt Geilenkirchen ihre Planung umsetzt, sieht unsere Heimat bald so aus; Fahren Sie einfach mal mit der Maus über das Bild und sehen Sie sich die schwerwiegenden Folgen für Mensch und Natur in Ruhe an!")
         val textLayout = VerticalLayout()
         textLayout.add(paragraph1, paragraph2, paragraph3)
-
-        descriptionImageLayout.add(textLayout, TwentyTwenty(Image("images/ausbaubild/Ausbaubild-1.jpg", "Derzeitiger Stand"), Image("images/ausbaubild/Ausbaubild-2.jpg", "Geplanter Stand")))
+        textLayout.width = "50%"
+        val twentyTwenty = TwentyTwenty(Image("images/ausbaubild/Ausbaubild-1.jpg", "Derzeitiger Stand"), Image("images/ausbaubild/Ausbaubild-2.jpg", "Geplanter Stand"))
+        twentyTwenty.width = "50%"
+        descriptionImageLayout.add(textLayout, twentyTwenty)
         layout.add(descriptionImageLayout)
         add(layout)
     }
