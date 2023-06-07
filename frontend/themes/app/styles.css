@@ -1,0 +1,10 @@
+.header-image {
+    background-image: url("/images/header/header.jpg");
+    background: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%
+    background
+}
