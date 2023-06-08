@@ -107,4 +107,11 @@
             </build>
         </profile>
     </profiles>
+
+    <repositories>
+        <repository>
+            <id>Github Repository</id>
+            <url>https://maven.pkg.github.com/stop-gib-puettstr/stop-gib-puettstr-bom</url>
+        </repository>
+    </repositories>
 </project>
