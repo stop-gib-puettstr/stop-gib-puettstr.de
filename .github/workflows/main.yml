@@ -35,4 +35,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with maven
-        run: mvn -B package verify --file pom.xml
+        run: mvn s $GITHUB_WORKSPACE/.github/workflows/maven-settings.xml -B package verify --file pom.xml
+        env:
+          USER_NAME: ${{ secrets.USER_NAME }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
