@@ -5,6 +5,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 300px;
-    width: 100%
-    background
+    width: 100%;
+}
+
+#twentytwenty {
+    width: 64%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }

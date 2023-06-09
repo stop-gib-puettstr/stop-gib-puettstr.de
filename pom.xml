@@ -36,6 +36,18 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.vaadin.addons.flowingcode</groupId>
+            <artifactId>image-comparison-slider-addon</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -95,4 +107,11 @@
             </build>
         </profile>
     </profiles>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/stop-gib-puettstr/stop-gib-puettstr-bom</url>
+        </repository>
+    </repositories>
 </project>
