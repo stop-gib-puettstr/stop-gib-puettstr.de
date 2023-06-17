@@ -6,11 +6,12 @@ import com.vaadin.flow.component.html.Paragraph
 import com.vaadin.flow.component.icon.Icon
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout
 import com.vaadin.flow.component.orderedlayout.VerticalLayout
+import org.puettstr.util.VaadinExtensions.color
 
 class InfoBoxElement : Div {
 
     constructor(icon: Icon, headline: H3, text: Paragraph) {
-        headline.style["color"] = "#fff"
+        headline.color = "#fff"
         val headlineLayout = HorizontalLayout()
         headlineLayout.add(icon, headline)
         val layout = VerticalLayout()
